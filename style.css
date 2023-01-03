@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.card {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    max-width: 300px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-content {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 10px;
+}
+
+.desc {
+    color: hsl(224, 23%, 55%);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card-plan {
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 12px;
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.item-price {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.item-price div {
+    margin-left: 10px;
+}
+
+.item-price img {
+    width: 30px;
+    height: 30px;
+}
+
+.item-price div p {
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.item-price div span {
+    font: 500;
+    color: hsl(224, 23%, 55%);
+    font-size: 10px;
+}
+
+.card-plan a {
+    font-weight: 900;
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: hsl(225, 100%, 98%);
+    box-shadow: 0 4px 8px 0 hsl(224, 23%, 55%);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.cancel {
+    text-decoration: none;
+    font: 500;
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        margin: 20px;
+    }
+}
